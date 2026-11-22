@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f8f2e9">
+  <!-- Ícone da aba do navegador: usa somente a logomarca da Doces Falcão. -->
+  <link rel="icon" type="image/png" href="./logo%20marca%20doces%20falcao.png?v=20261122">
+  <link rel="shortcut icon" type="image/png" href="./logo%20marca%20doces%20falcao.png?v=20261122">
+  <link rel="apple-touch-icon" href="./logo%20marca%20doces%20falcao.png?v=20261122">
   <meta name="description" content="Doces Falcão: sabor artesanal desde 2010. Conheça nossos produtos, nossa história e os bastidores da colheita e produção.">
   <title>Doces Falcão | Sabor Artesanal desde 2010</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,31 +108,26 @@
  .header-inner{height:66px}
 }
 @media(max-width:380px){.new-hero-item{height:143px}.new-hero-item img{max-height:140px}.new-hero-kicker{font-size:8px}.new-hero-copy{padding:0 3px}}
+
+/* Capa fotográfica: utiliza somente a fotografia original, sem texto ou sobreposição. */
+.photo-only-hero{background:#f7efe5;padding:0;border-bottom:1px solid var(--line);width:100%;overflow:hidden}
+.photo-only-wrap{width:100%;max-width:none;margin:0;padding:0}
+.photo-only-wrap img{display:block;width:100%;height:auto;max-width:none;object-fit:contain;border-radius:0;box-shadow:none}
+@media(max-width:760px){.photo-only-hero{padding:0}.photo-only-wrap{width:100%}.photo-only-wrap img{border-radius:0;box-shadow:none}}
 </style>
 </head>
 <body>
 <header class="site-header" id="topo"><div class="container header-inner">
-  <a class="brandmark" href="#inicio" aria-label="Doces Falcão - início"><img class="header-logo-image" src="assets/capa/logo-doces-falcao-transparente.png" alt="Doces Falcão" width="135" height="90"></a>
+  <a class="brandmark" href="#inicio" aria-label="Doces Falcão - início"><img class="header-logo-image" src="logo%20marca%20doces%20falcao.png" alt="Doces Falcão" width="135" height="90"></a>
   <nav class="desktop-nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#historia">Nossa história</a><a href="#colheita">Colheita</a><a href="#videos">Vídeos</a><a class="nav-cta" href="#contato">Contato ↗</a></nav>
   <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobilePanel">☰</button>
 </div><nav id="mobilePanel" class="mobile-panel" aria-label="Menu para celular"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#historia">Nossa história</a><a href="#colheita">Colheita</a><a href="#proprietarios">Proprietários</a><a href="#videos">Vídeos</a><a class="nav-cta" href="#contato">Contato ↗</a></nav></header>
 
 <main>
-<section class="new-hero" id="inicio" aria-label="Doces Falcão: sabor artesanal desde 2010">
-<div class="container">
-  <p class="new-hero-kicker">Agricultura familiar <span aria-hidden="true">•</span> Sabor artesanal desde 2010</p>
-  <div class="new-hero-stage">
-    <div class="new-hero-item new-hero-item-left"><img src="assets/produtos/biscoitos-recorte.png" alt="Biscoitos amanteigados da Doces Falcão" width="650" height="580"></div>
-    <div class="new-hero-identity"><img class="new-hero-brand" src="assets/capa/logo-doces-falcao-transparente.png" alt="Doces Falcão — Sabor Artesanal, desde 2010" width="638" height="436"></div>
-    <div class="new-hero-item new-hero-item-right"><img src="assets/produtos/goiabada-recorte.png" alt="Goiabada cascão artesanal Doces Falcão" width="1200" height="700"></div>
+<section class="photo-only-hero" id="inicio" aria-label="Fotografia dos produtos artesanais Doces Falcão">
+  <div class="photo-only-wrap">
+    <img src="foto-doces-falcao.webp" alt="Goiabada artesanal Doces Falcão servida com queijo, ao lado de goiabas frescas, sobre uma tábua de madeira" width="680" height="453" fetchpriority="high" decoding="async">
   </div>
-  <div class="new-hero-copy">
-    <h1>Do campo à sua mesa, <em>sabores que contam histórias.</em></h1>
-    <p>Desde 2010, o cuidado da agricultura familiar encontra a tradição dos doces artesanais. Goiabas, maracujás e outros ingredientes fresquinhos, colhidos direto no pé, fazem parte dessa história.</p>
-    <div class="new-hero-actions"><a class="btn btn-primary" href="#produtos">Conheça nossos produtos ↗</a><a class="btn btn-outline" href="#colheita">Nossa colheita</a></div>
-  </div>
-  <div class="new-hero-bottom"><span>Goiabadas</span><span>Biscoitos artesanais</span><span>Doces especiais</span></div>
-</div>
 </section>
 
 <section class="section" id="produtos"><div class="container"><div class="section-head reveal"><span class="eyebrow">Conheça nossa produção</span><h2 class="section-title">Sabores que contam <em>histórias.</em></h2><p class="section-desc">Da goiabada aos biscoitos, cada receita celebra o cuidado artesanal. Conheça nossas variedades — as fotos que ainda faltam serão acrescentadas conforme forem enviadas.</p></div>
@@ -151,7 +150,7 @@
 
 <section class="contact" id="contato"><div class="container reveal"><span class="eyebrow">Vamos conversar</span><h2 class="section-title">Descubra mais sobre a <em>Doces Falcão.</em></h2><p>Fale diretamente com a Doces Falcão para conhecer os produtos e saber mais sobre a produção artesanal.</p><a class="btn btn-primary" href="https://wa.me/5521999317024?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20os%20produtos%20da%20Doces%20Falc%C3%A3o." target="_blank" rel="noopener noreferrer">Conversar no WhatsApp <span aria-hidden="true">↗</span></a><div class="contact-footnote">(21) 99931-7024 · Cachoeiras de Macacu, RJ · Telefone informado nas embalagens</div></div></section>
 </main>
-<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brandmark" href="#topo"><img class="header-logo-image" src="assets/capa/logo-doces-falcao-transparente.png" alt="Doces Falcão" width="135" height="90"></a><p>Um espaço para celebrar os produtos, as pessoas e as histórias da Doces Falcão.</p></div><div class="footer-links"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#historia">História</a><a href="#colheita">Colheita</a><a href="#videos">Vídeos</a><a href="#contato">Contato</a></div></div><div class="footer-bottom"><span>© <span id="ano"></span> Doces Falcão. Todos os direitos reservados.</span><span>Fotografias reais dos produtos · Novas imagens da colheita em preparação</span></div></div></footer>
+<footer class="footer"><div class="container"><div class="footer-top"><div><a class="brandmark" href="#topo"><img class="header-logo-image" src="logo%20marca%20doces%20falcao.png" alt="Doces Falcão" width="135" height="90"></a><p>Um espaço para celebrar os produtos, as pessoas e as histórias da Doces Falcão.</p></div><div class="footer-links"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#historia">História</a><a href="#colheita">Colheita</a><a href="#videos">Vídeos</a><a href="#contato">Contato</a></div></div><div class="footer-bottom"><span>© <span id="ano"></span> Doces Falcão. Todos os direitos reservados.</span><span>Fotografias reais dos produtos · Novas imagens da colheita em preparação</span></div></div></footer>
 <script>
   const menuToggle=document.getElementById('menuToggle');const mobilePanel=document.getElementById('mobilePanel');
   menuToggle.addEventListener('click',()=>{const open=mobilePanel.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');menuToggle.textContent=open?'✕':'☰'});
