@@ -1,0 +1,9 @@
+DOCES FALCÃO — NOVA CAPA (22/11/2026)
+
+- Novo layout mais limpo no celular: marca isolada no centro, produtos sem fundo nem mãos.
+- Logomarca atual: assets/capa/logo-doces-falcao-transparente.png (reconstrução provisória a partir de referência fotografada; substituir pelo arquivo oficial PNG/SVG quando disponível para garantir fidelidade absoluta).
+- Recortes em PNG transparente de goiabada, biscoitos e doce: assets/produtos/.
+- Conteúdo restante do site: catálogo, história, colheita, proprietários, vídeos e contato.
+- As variedades sem fotos originais permanecem como textos, sem fotos inventadas.
+
+Abra index.html para visualizar. Para publicar no GitHub Pages envie toda a estrutura com a pasta assets.
