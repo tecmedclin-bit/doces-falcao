@@ -111,9 +111,9 @@
 
 /* Capa fotográfica: utiliza somente a fotografia original, sem texto ou sobreposição. */
 .photo-only-hero{background:#f7efe5;padding:0;border-bottom:1px solid var(--line);width:100%;overflow:hidden}
-.photo-only-wrap{width:100%;max-width:none;margin:0;padding:0}
-.photo-only-wrap img{display:block;width:100%;height:auto;max-width:none;object-fit:contain;border-radius:0;box-shadow:none}
-@media(max-width:760px){.photo-only-hero{padding:0}.photo-only-wrap{width:100%}.photo-only-wrap img{border-radius:0;box-shadow:none}}
+.photo-only-wrap{width:100%;max-width:none;margin:0;padding:0;display:flex;justify-content:center;align-items:center;overflow:hidden}
+.photo-only-wrap img{display:block;width:100%;height:clamp(515px,47vw,650px);max-width:none;object-fit:cover;object-position:center 42%;border-radius:0;box-shadow:none;margin:0 auto}
+@media(max-width:760px){.photo-only-hero{padding:0}.photo-only-wrap{width:100%;overflow:hidden}.photo-only-wrap img{width:100%;height:clamp(220px,56vw,320px);max-width:none;max-height:none;object-fit:cover;object-position:center 42%;border-radius:0;box-shadow:none}}
 </style>
 </head>
 <body>
@@ -126,7 +126,7 @@
 <main>
 <section class="photo-only-hero" id="inicio" aria-label="Fotografia dos produtos artesanais Doces Falcão">
   <div class="photo-only-wrap">
-    <img src="foto-doces-falcao.webp" alt="Goiabada artesanal Doces Falcão servida com queijo, ao lado de goiabas frescas, sobre uma tábua de madeira" width="680" height="453" fetchpriority="high" decoding="async">
+    <img src="Goiabada%20Casc%C3%A3o%20Doces%20Falc%C3%A3o.png" alt="Goiabada Cascão Doces Falcão com embalagem, goiabada cortada, faca, queijo e goiabas frescas sobre uma tábua de madeira" width="1672" height="941" fetchpriority="high" decoding="async">
   </div>
 </section>
 
