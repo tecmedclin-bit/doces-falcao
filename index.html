@@ -115,9 +115,9 @@
 .photo-only-wrap img{display:block;width:100%;height:clamp(515px,47vw,650px);max-width:none;object-fit:cover;object-position:center 42%;border-radius:0;box-shadow:none;margin:0 auto}
 @media(max-width:760px){.photo-only-hero{padding:0}.photo-only-wrap{width:100%;overflow:hidden}.photo-only-wrap img{width:100%;height:clamp(220px,56vw,320px);max-width:none;max-height:none;object-fit:cover;object-position:center 42%;border-radius:0;box-shadow:none}}
 
-/* Logomarca compacta: marca maior que o medalhão e alinhada sobre o cabeçalho e a capa. */
-.site-header { overflow:visible; }
-.site-header .header-inner { position:relative; }
+/* Acabamento plano: o creme do cabeçalho continua em semicírculo atrás da base da marca. */
+.site-header {overflow:visible;background:#fbf8f2;backdrop-filter:none}
+.site-header .header-inner {position:relative}
 .site-header .brandmark {
   position:relative;
   display:block;
@@ -133,20 +133,20 @@
   position:absolute;
   z-index:0;
   left:50%;
-  top:20px;
+  top:calc(100% - 1px);
   transform:translateX(-50%);
-  width:137px;
-  height:112px;
-  border-radius:50%;
-  background:#fff9f0;
-  border:2px solid #e7d5c2;
-  box-shadow:0 6px 15px rgba(45,28,20,.16);
+  width:126px;
+  height:63px;
+  border-radius:0 0 63px 63px;
+  background:#fbf8f2;
+  border:0;
+  box-shadow:none;
   pointer-events:none;
 }
 .site-header .brandmark .header-logo-image {
   position:absolute;
   z-index:1;
-  top:19px;
+  top:17px;
   left:50%;
   transform:translateX(-50%);
   width:153px;
@@ -154,22 +154,22 @@
   max-width:none;
   object-fit:contain;
   mix-blend-mode:normal;
-  filter:drop-shadow(0 1px 2px rgba(58,31,23,.12));
+  filter:none;
 }
 @media(max-width:980px) and (min-width:761px) {
   .site-header .brandmark {width:134px;flex:0 0 134px}
-  .site-header .brandmark::before {width:120px;height:99px;top:18px}
-  .site-header .brandmark .header-logo-image {width:134px;height:102px;top:17px}
+  .site-header .brandmark::before {width:112px;height:56px;border-radius:0 0 56px 56px}
+  .site-header .brandmark .header-logo-image {width:134px;height:102px;top:15px}
 }
 @media(max-width:760px) {
   .site-header .brandmark {width:119px;flex:0 0 119px}
-  .site-header .brandmark::before {width:108px;height:88px;top:18px}
-  .site-header .brandmark .header-logo-image {width:119px;height:90px;top:17px}
+  .site-header .brandmark::before {width:100px;height:50px;border-radius:0 0 50px 50px}
+  .site-header .brandmark .header-logo-image {width:119px;height:90px;top:14px}
 }
 @media(max-width:380px) {
   .site-header .brandmark {width:110px;flex:0 0 110px}
-  .site-header .brandmark::before {width:100px;height:79px;top:18px}
-  .site-header .brandmark .header-logo-image {width:110px;height:82px;top:17px}
+  .site-header .brandmark::before {width:92px;height:46px;border-radius:0 0 46px 46px}
+  .site-header .brandmark .header-logo-image {width:110px;height:82px;top:13px}
 }
 </style>
 </head>
